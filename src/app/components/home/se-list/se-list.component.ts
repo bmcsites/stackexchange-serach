@@ -15,7 +15,7 @@ export class SeListComponent {
     if(searchTag === '' || !searchTag){
       this.data = [];
     } else {
-      this.httpService.getQuestuions(searchTag).subscribe(data => {
+      this.httpService.getQuestions(searchTag).subscribe(data => {
           // @ts-ignore
           if (data.items) {
             // @ts-ignore

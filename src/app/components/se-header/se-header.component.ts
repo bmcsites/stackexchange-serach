@@ -5,11 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './se-header.component.html',
   styleUrls: ['./se-header.component.scss']
 })
-export class SeHeaderComponent implements OnInit {
+export class SeHeaderComponent {
 
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }
