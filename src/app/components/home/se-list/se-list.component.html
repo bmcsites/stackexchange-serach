@@ -1,0 +1,12 @@
+<div class="search-box">
+  <input #searchTag type="search" name="q" aria-label="Search through site content" placeholder="search to view result"/>
+  <button (click)="searchData(searchTag.value)">Search</button>
+</div>
+<ul *ngIf="data && data.length !== 0">
+  <li class="list-box" *ngFor="let q of data" (click)="showInfo(q)">
+    {{q.title}}
+  </li>
+</ul>
+<div class="no-questions">
+  <p *ngIf="data && data.length === 0">no result found</p>
+</div>

@@ -1,0 +1,11 @@
+<app-se-header></app-se-header>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      <app-se-list (valueChange)="questionClicked($event)"></app-se-list>
+    </div>
+    <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+      <app-se-info #seInfo></app-se-info>
+    </div>
+  </div>
+</div>
